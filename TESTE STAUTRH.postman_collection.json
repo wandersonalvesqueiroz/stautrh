@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "fa16b1d3-570b-4026-8659-515d235109d9",
+		"name": "TESTE STAUTRH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Lucas",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "lucas2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "tecladogsdsfsfg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/create.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "wandersonmg18@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/login.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/user.php?id=20",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"user.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/user.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "teste",
+						"value": "teste",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Wanderson",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "wanderson@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "eu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/edit.php?id=1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"edit.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "teste",
+						"type": "text",
+						"value": "teste"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/delete.php?id=19",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Drink",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "drink_ml",
+							"value": "300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/drink.php?id=21",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"drink.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User History",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/user_history.php?id=20",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"user_history.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Ranking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost/stautrh/users/user_ranking.php?id=20",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"stautrh",
+						"users",
+						"user_ranking.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
